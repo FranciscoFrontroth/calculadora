@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba franfron</title>
+</head>
+<body>
+    <div id="contador-app">
+  <h2>Contador: <span id="numero">0</span></h2>
+  <div class="botones">
+    <button id="decrementar">-1</button>
+    <button id="reset">Reset</button>
+    <button id="incrementar">+1</button>
+  </div>
+  <div class="controles">
+    <input type="number" id="paso" value="1" min="1">
+    <label for="paso">Pasoss</label>
+  </div>
+</div>
+
+<hr>
+<hr>
+
+
+<form id="formulario-registro">
+  <div class="campo">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <span class="error" id="error-email"></span>
+  </div>
+  
+  <div class="campo">
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" required>
+    <span class="error" id="error-password"></span>
+  </div>
+  
+  <div class="campo">
+    <label for="confirmar-password">Confirmar Contraseña:</label>
+    <input type="password" id="confirmar-password" required>
+    <span class="error" id="error-confirmar"></span>
+  </div>
+  
+  <button type="submit" id="btn-enviar" disabled>Registrarse</button>
+</form>
+
+
+</body>
+
+<hr>
+<hr>
+
+<div id="galeria">
+  <div class="imagen-principal">
+    <img id="imagen-grande" src="imagen1.jpg" alt="Imagen principal">
+  </div>
+  
+  <div class="miniaturas">
+    <img src="imagen1.jpg" alt="Imagen 1" class="miniatura activa" data-src="imagen1.jpg">
+    <img src="imagen2.jpg" alt="Imagen 2" class="miniatura" data-src="imagen2.jpg">
+    <img src="imagen3.jpg" alt="Imagen 3" class="miniatura" data-src="imagen3.jpg">
+    <img src="imagen4.jpg" alt="Imagen 4" class="miniatura" data-src="imagen4.jpg">
+  </div>
+  
+  <div class="controles">
+    <button id="anterior">← Anterior</button>
+    <button id="siguiente">Siguiente →</button>
+  </div>
+</div>
+
+
+<script src="js.js"></script>
+</html>

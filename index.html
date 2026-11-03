@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    
+<div class="calculadora">
+   <div class="pantalla">
+      <div class="operacion-anterior" id="operacion-anterior"></div>
+      <div class="operacion-actual" id="operacion-actual">0</div>
+    </div>
+
+    <div class="botones">
+        <button class="btn boton-operador" data-operador="%">%</button>
+        <button class="btn boton-operador" data-operador="/">/</button>
+        <button class="btn boton-operador" id='clear'>C</button>
+        <button class="btn boton-operador" id='delete'>del</button>
+
+
+        
+        <button class="btn boton-numero" data-numero="7">7</button>
+        <button class="btn boton-numero" data-numero="8">8</button>
+        <button class="btn boton-numero" data-numero="9">9</button>
+        <button class="btn boton-operador" data-operador="X">X</button>
+
+        
+        <button class="btn boton-numero" data-numero="4">4</button>
+        <button class="btn boton-numero" data-numero="5">5</button>
+        <button class="btn boton-numero" data-numero="6">6</button>
+        <button class="btn boton-operador" data-operador="-">-</button>
+        
+        
+        <button class="btn boton-numero" data-numero="1">1</button>
+        <button class="btn boton-numero" data-numero="2">2</button>
+        <button class="btn boton-numero" data-numero="3">3</button>
+        <button class="btn boton-operador"  data-operador="+">+</button>
+        
+        
+        <button class="btn boton-numero" data-numero=".">.</button>
+        <button class="btn boton-numero" data-numero="0">0</button>
+        <button class="btn boton-igual" id="igual">=</button>
+
+
+    </div>
+
+
+</div>
+<script src="calculadora.js"></script>
+
+
+</body>
+</html>
