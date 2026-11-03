@@ -132,7 +132,7 @@ function calcular (){
         resultado = ant / act
         break 
       case '%':
-        resultado = (act*100)/ant
+        resultado = (act*ant)/100
         break
       default:
         return
@@ -144,6 +144,7 @@ function calcular (){
     numeroAnterior = ''
     operador = null
     debeformatear = true
+    
 
   }catch (error) {//para manejar algun error de las operacions 
     mostrarError(error.message)
@@ -158,15 +159,6 @@ function mostrarError(mensaje) {
   displayAnterior.textContent = mensaje
   setTimeout(() => limpiar(), 2000)
 }
-
-function limpiar() {
-  numeroActual = '0'
-  numeroAnterior = ''
-  operador = null
-  debeformatear = false
-  ActualizarPantallas()
-}
-
 
 function limpiar() {
   numeroActual = '0'
